@@ -5,4 +5,4 @@ lista com o seu conteudo. Cainã Campos se
 transforma em dois elementos ['Cainã', 'Campos']
 Ele vai fatiar'''
 print('Primeiro nome: {}'.format(nome[0]))
-print('Seu último nome é {}'.format(nome[len(nome)-1]))
+print('Seu último nome é: {}'.format(nome[len(nome)-1]))
