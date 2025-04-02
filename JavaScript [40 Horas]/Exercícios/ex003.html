@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Meu primeiro programa</title>
+    <title>ex003</title>
 
     <!--A parte do style é CSS--> 
     <style>
@@ -28,12 +28,17 @@
     --> 
     
     <script>
-        window.alert('Minha primeira mensagem') // posso anotar meus comandos. Para aprender vai ser ótimo.
-        window.confirm('Está gostando de JavaScript?')
-        window.prompt('Qual é o seu nome?')
-        // esse tipo de comentário só funciona do JS. 
-        // Ele é só de uma linha
-        /* multiplas linhas  */
+        var n1 = Number (window.prompt('Digite um número: ')) // string
+        var n2 = Number (window.prompt('Digite outro número: ')) // string
+        var s = n1 + n2 // tem que converter para number
+        // para converter tenho que usar Number.parseInt(n) ou Number.parseFloat(n).
+        // Posso usar só Number(n)
+        window.alert(`A soma dos valores é ${s}`) //Concatenação
+        // lembrar de usar crase `
+        // number + number → adição
+        // string + string → concatenação
     </script>
 </body>
 </html>
+<!--  
+-->
