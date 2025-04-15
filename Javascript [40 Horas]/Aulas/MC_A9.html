@@ -3,20 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Primeiros passos com DOM</title>
     <style>
 /* 
 → O professor mandou instalar no VS a extenção "Watch in Chrome". Ela não existe mais e em vez dela foi sugerido a instalação do programa "Live Server"
 → Outro programa: Node.js Exec. Usage
 To execute the current file or the selection press F8 or use the command Execute Node.js
 To cancel a running process press F9
-
+→ O que é DOM: Document Object Model
 */
+        body {
+            background-color: black;
+            color: blanchedalmond;
+            font: normal 14pt arial;
+        }
+
     </style>
 
 </head>
 
 <body>
+    <h1>iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScripit</p>
+    <div id="msg">Clique em mim</div>
+    
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        /*
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+        */
+       var d = window.document.querySelector('div#msg')
+       d.style.background = 'green'
+    </script>
     
 </body>
 </html>
